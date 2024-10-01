@@ -1,0 +1,80 @@
+.aboutUsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 90vh;
+}
+
+.leftToRightAboutContainer,
+.rightToLeftAboutContainer {
+  height: 100%;
+}
+
+.leftToRightAboutContainer {
+  background: linear-gradient(to right, #222831 52.7%, #393e46 52.7%);
+}
+
+.rightToLeftAboutContainer {
+  background: linear-gradient(to right, #393e46 47.3%, #222831 47.3%);
+}
+
+.leftToRightAboutContainer .textSide {
+  margin-left: 40px;
+}
+
+.rightToLeftAboutContainer .textSide {
+  margin-right: 40px;
+}
+
+.aboutUsSectionContent {
+  display: flex;
+  height: 100%;
+}
+
+.imageSide {
+  flex: 11;
+  position: relative;
+}
+
+.textSide {
+  flex: 9;
+}
+
+.leftToRightAboutContainer .imageSide img {
+  padding: 40px 40px 40px 0;
+}
+.rightToLeftAboutContainer .imageSide img {
+  padding: 40px 0 40px 40px;
+}
+
+.textSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+.rightToLeftAboutContainer .textSide {
+  text-align: right;
+}
+
+.aboutImage {
+  object-fit: cover;
+}
+
+.textSideTitle {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.textSideSubtitle {
+  font-size: 32px;
+  color: #00adb5;
+}
+
+.textSideTitleDescription,
+.textSideSubtitleDescription {
+  line-height: 1.5;
+}
