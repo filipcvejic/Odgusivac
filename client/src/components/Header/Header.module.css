@@ -1,0 +1,60 @@
+.topHeaderWrapper {
+  background-color: #222831;
+  padding: 4px 0 4px 0;
+}
+
+.topHeaderContent {
+  padding-block: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.contactInfo {
+  font-size: 20px;
+}
+
+.contactPhone {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 24px;
+}
+
+.mainHeaderWrapper {
+  background-color: #eeeeee;
+  padding: 4px 0 4px 0;
+}
+
+.mainHeaderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navBar ul li a {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  gap: 5px;
+}
+
+.logo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 36px;
+  color: #222831;
+  margin-top: 4px;
+}
