@@ -28,27 +28,29 @@ export default function Services() {
 
   return (
     <div className={`${styles.servicesWrapper} container`}>
-      <h3 className={`${styles.servicesHeading} ${bebas_neue.className}`}>
-        ODGUŠIVANJE CEVI U NOVOM SADU
-      </h3>
-      <div className={styles.servicesContainer}>
-        {services.map((service, index) => (
-          <div className={styles.service} key={index}>
-            <div className={styles.serviceCircle}>
-              <div className={styles.imageWrapper}>
-                <Image
-                  src={service.icon}
-                  width={120}
-                  height={120}
-                  alt="Pipe image"
-                />
+      <div className={styles.servicesContent}>
+        <h3 className={`${styles.servicesHeading} ${bebas_neue.className}`}>
+          ODGUŠIVANJE CEVI U NOVOM SADU
+        </h3>
+        <div className={styles.servicesContainer}>
+          {services.map((service, index) => (
+            <div className={styles.service} key={index}>
+              <div className={styles.serviceCircle}>
+                <div className={styles.imageWrapper}>
+                  <Image
+                    src={service.icon}
+                    width={120}
+                    height={120}
+                    alt="Pipe image"
+                  />
+                </div>
+                <div className={styles.topHalf} />
+                <div className={styles.bottomHalf} />
               </div>
-              <div className={styles.topHalf} />
-              <div className={styles.bottomHalf} />
+              <p className={styles.serviceDescription}>{service.label}</p>
             </div>
-            <p className={styles.serviceDescription}>{service.label}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
