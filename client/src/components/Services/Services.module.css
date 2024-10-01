@@ -1,9 +1,12 @@
 .servicesWrapper {
   margin-block: 50px;
+}
+
+.servicesContent {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: white;
+  background-color: #eeeeee;
 }
 
 .servicesHeading {
