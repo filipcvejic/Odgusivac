@@ -27,8 +27,8 @@ export default function Services() {
   ];
 
   return (
-    <div className={`${styles.servicesWrapper} container`}>
-      <div className={styles.servicesContent}>
+    <div className={styles.servicesWrapper}>
+      <div className={`${styles.servicesContent} container`}>
         <h3 className={`${styles.servicesHeading} ${bebas_neue.className}`}>
           ODGUŠIVANJE CEVI U NOVOM SADU
         </h3>
