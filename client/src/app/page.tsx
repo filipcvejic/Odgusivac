@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import AboutUs from "@/components/AboutUs";
 import Offers from "@/components/Offers";
 import Experiences from "@/components/Experiences";
+import Footer from "@/components/Footer";
 import PhoneFlag from "@/components/PhoneFlag";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutUs />
       <Offers />
       <Experiences />
+      <Footer />
       <PhoneFlag />
     </div>
   );
