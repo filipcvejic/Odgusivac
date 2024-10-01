@@ -23,6 +23,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #eeeeee;
+  color: black;
 }
 
 * {
@@ -42,8 +43,21 @@ a {
   }
 }
 
+.content {
+  position: relative;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding-inline: 20px;
+}
+
+.swiper-pagination-bullets {
+  padding-bottom: 20px !important;
+  bottom: -20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: black !important;
 }

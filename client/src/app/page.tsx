@@ -4,16 +4,18 @@ import Services from "@/components/Services";
 import AboutUs from "@/components/AboutUs";
 import Offers from "@/components/Offers";
 import Experiences from "@/components/Experiences";
+import PhoneFlag from "@/components/PhoneFlag";
 
 export default function Home() {
   return (
-    <div>
+    <div className="content">
       <Header />
       <Hero />
       <Services />
       <AboutUs />
       <Offers />
       <Experiences />
+      <PhoneFlag />
     </div>
   );
 }

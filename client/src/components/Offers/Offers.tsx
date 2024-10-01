@@ -45,7 +45,7 @@ export default function Offers() {
                 </p>
                 <p>{offer.description}</p>
               </div>
-              <button className={styles.offerButton}>Learn more</button>
+              <a className={styles.offerButton}>Learn more</a>
             </div>
           </div>
         ))}
