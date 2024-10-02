@@ -53,7 +53,7 @@ const Footer = () => {
 
         <div className={styles.footerBottomSide}>
           <div className={`${styles.footerLogo} ${bebas_neue.className}`}>
-            Vulkanizer
+            VODOINSTALATER
           </div>
           <div className={styles.footerLogoText}>
             DISCOVER WHAT BETTER FEELS LIKE{" "}

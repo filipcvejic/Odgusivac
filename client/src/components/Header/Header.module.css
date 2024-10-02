@@ -1,3 +1,13 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.5);
+}
+
 .topHeaderWrapper {
   background-color: #222831;
   padding: 4px 0 4px 0;
@@ -24,6 +34,7 @@
 
 .mainHeaderWrapper {
   padding: 4px 0 4px 0;
+  background-color: #eeeeee;
 }
 
 .mainHeaderContent {
@@ -45,6 +56,29 @@
   font-size: 22px;
   gap: 5px;
   color: black;
+}
+
+.navBar ul li a svg,
+.navBar ul li a span,
+.contactPhone svg,
+.contactPhone span {
+  transition: all 0.2s ease;
+}
+
+.contactPhone svg,
+.navBar ul li a svg {
+  height: 25px;
+  width: 25px;
+}
+
+.navBar ul li a:hover svg,
+.contactPhone:hover svg {
+  fill: #00adb5;
+}
+
+.navBar ul li a:hover span,
+.contactPhone:hover span {
+  color: #00adb5;
 }
 
 .logo {

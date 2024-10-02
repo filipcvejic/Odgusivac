@@ -10,7 +10,9 @@ import PhoneFlag from "@/components/PhoneFlag";
 export default function Home() {
   return (
     <div className="content">
-      <Header />
+      <div id="home">
+        <Header />
+      </div>
       <Hero />
       <Services />
       <AboutUs />

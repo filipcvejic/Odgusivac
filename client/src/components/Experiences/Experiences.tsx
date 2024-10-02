@@ -40,7 +40,10 @@ export default function Experiences() {
   ];
 
   return (
-    <div className={`${styles.experiencesWrapper} ${montserrat.className}`}>
+    <div
+      className={`${styles.experiencesWrapper} ${montserrat.className}`}
+      id="experiences"
+    >
       <div className={`${styles.experiencesContainer} container`}>
         <h3 className={styles.experiencesHeading}>ISKUSTVA KORISNIKA</h3>
         <div>

@@ -26,7 +26,10 @@ export default function AboutUs() {
   ];
 
   return (
-    <div className={`${styles.aboutUsWrapper} ${montserrat.className}`}>
+    <div
+      className={`${styles.aboutUsWrapper} ${montserrat.className}`}
+      id="about"
+    >
       {aboutUsSections.map((aboutUsSection, index) => {
         const isEven = index % 2 == 0;
 
