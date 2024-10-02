@@ -5,25 +5,25 @@ import { bebas_neue, montserrat } from "@/app/font";
 export default function Header() {
   const navigationLinks = [
     {
-      label: "Home",
+      label: "Početna",
       href: "/",
       icon: "/icons/house-icon.svg",
       iconAlt: "House Icon",
     },
     {
-      label: "About us",
-      href: "/about",
-      icon: "/icons/user-icon.svg",
-      iconAlt: "User Icon",
-    },
-    {
-      label: "Services",
+      label: "Usluge",
       href: "/services",
       icon: "/icons/services-icon.svg",
       iconAlt: "Services Icon",
     },
     {
-      label: "Reviews",
+      label: "O Nama",
+      href: "/about",
+      icon: "/icons/user-icon.svg",
+      iconAlt: "User Icon",
+    },
+    {
+      label: "Iskustva",
       href: "/reviews",
       icon: "/icons/reviews-icon.svg",
       iconAlt: "Reviews Icon",
