@@ -9,7 +9,7 @@ const Footer = () => {
         <div
           className={`${bebas_neue.className} ${styles.topFooterWrapperText}`}
         >
-          Sign up today & save 15%
+          Kontaktirajte nas
         </div>
         <div className={styles.topFooterWrapperContainer}>
           <input
@@ -20,7 +20,7 @@ const Footer = () => {
           <button
             className={`${bebas_neue.className} ${styles.topFooterWrapperButton}`}
           >
-            I'm IN
+            Pošalji
           </button>
         </div>
       </div>
@@ -55,23 +55,22 @@ const Footer = () => {
           <div className={`${styles.footerLogo} ${bebas_neue.className}`}>
             VODOINSTALATER
           </div>
-          <div className={styles.footerLogoText}>
-            DISCOVER WHAT BETTER FEELS LIKE{" "}
-          </div>
+          <div className={styles.footerLogoText}>OTKRIJTE ŠTA ZNAČI BOLJE</div>
           <div className={styles.footerStatementsText}>
-            Statements made on this website have not been evaluated by any
-            regulatory authorities. These products and services are not intended
-            to diagnose, treat, cure, or prevent any issues or problems.
-            Information provided by this website or this company is not a
-            substitute for professional advice. Always seek the advice of
-            qualified professionals regarding any questions or concerns you may
-            have. | © [Your Company Name], Inc. 2013–2024
+            Izjave navedene na ovoj veb stranici nisu procenjene od strane
+            regulatornih tela. Ovi proizvodi i usluge nisu namenjeni
+            dijagnostikovanju, lečenju, izlečenju ili prevenciji bilo kakvih
+            problema ili poteškoća. Informacije pružene ovom veb stranicom ili
+            ovom kompanijom nisu zamena za profesionalni savet. Uvek se
+            konsultujte sa kvalifikovanim stručnjacima u vezi sa bilo kakvim
+            pitanjima ili nedoumicama koje imate. | © [Ime vaše kompanije], Inc.
+            2013–2024
           </div>
           <div className={styles.footerBottomPhrases}>
-            <div>PRIVACY POLICY</div>
-            <div>TERMS</div>
-            <div>SELLER POLICY</div>
-            <div>ACCESSIBILITY</div>
+            <div>PRIVATNOST POLITIKA</div>
+            <div>USLOVI</div>
+            <div>POLITIKA PRODAJE</div>
+            <div>PRISTUPAČNOST</div>
           </div>
         </div>
       </div>
