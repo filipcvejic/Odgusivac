@@ -12,13 +12,13 @@ export default function Offers() {
       tag: "Kvalitet",
     },
     {
-      image: "/images/like-image.png",
+      image: "/images/pipe.png",
       title: " i Posvećenost",
       description: "Iskusni Majstori Za Vaš Dom",
       tag: "Iskustvo",
     },
     {
-      image: "/images/like-image.png",
+      image: "/images/smiley.png",
       title: " Zadovoljstvo",
       description: "Zajedno do savršenog rešenja za vas.",
       tag: "Vaše",
@@ -31,12 +31,7 @@ export default function Offers() {
         {offers.map((offer, index) => (
           <div key={index} className={styles.offerContent}>
             <div>
-              <Image
-                src={offer.image}
-                height={100}
-                width={100}
-                alt="Like icon"
-              />
+              <Image src={offer.image} height={90} width={90} alt="Like icon" />
             </div>
             <div className={styles.offerActions}>
               <div>
@@ -45,7 +40,7 @@ export default function Offers() {
                 </p>
                 <p>{offer.description}</p>
               </div>
-              <a className={styles.offerButton}>Learn more</a>
+              <a className={styles.offerButton}>Saznaj više</a>
             </div>
           </div>
         ))}
