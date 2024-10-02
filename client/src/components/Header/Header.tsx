@@ -121,7 +121,7 @@ export default function Header() {
               width={46}
               height={46}
             />
-            <a href="#">odgušivač</a>
+            <a href="#home">odgušivač</a>
           </div>
 
           <nav className={styles.navBar}>
