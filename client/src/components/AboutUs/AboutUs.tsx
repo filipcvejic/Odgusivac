@@ -6,22 +6,22 @@ import { montserrat } from "@/app/font";
 export default function AboutUs() {
   const aboutUsSections = [
     {
-      title: "Our Company History",
+      title: "Hitne intervencije 24/7 za odgušivanje",
       titleDescription:
-        "When it comes to your plumbing needs, you need a team you can trust. At Pipowork, we're committed to providing our clients with the highest quality plumbing solutions and exceptional customer service.",
-      subtitle: "Trust Our Team Experts",
+        "Kada su vam odvodi zapušeni i voda ne otiče, naš tim je dostupan 24/7 za hitne intervencije u odgušivanju cevi. Sa modernom opremom i dugogodišnjim iskustvom, brzo rešavamo svaki problem sa začepljenim cevima, bez obzira na ozbiljnost situacije. Oslonite se na nas za brzu i pouzdanu uslugu odgušivanja cevi koja rešava hitne slučajeve.",
+      subtitle: "odgušivanje cevi u Novom Sadu",
       subtitleDescription:
-        "When it comes to your plumbing needs, you need a team you can trust. At Pipowork, we're committed to providing our clients with the highest quality plumbing solutions and exceptional customer service.",
-      image: "/images/about1-image.png",
+        "Zapušene cevi mogu uzrokovati ozbiljne probleme u domaćinstvu, od neprijatnih mirisa do značajnih oštećenja instalacija. Naša ekipa pruža stručno odgušivanje cevi, koristeći najsavremenije alate koji garantuju temeljno čišćenje bez oštećenja cevi. Poverite nam svoje probleme.",
+      image: "/images/about2-image.png",
     },
     {
-      title: "Air Conditioning",
+      title: "Oslonite se na naše stručnjake",
       titleDescription:
-        "When it comes to your plumbing needs, you need a team you can trust. At Pipowork, we're committed to providing our clients with the highest quality plumbing solutions and exceptional customer service.",
-      subtitle: "Odgusenje kanalizacija",
+        "Kada su u pitanju vaše vodoinstalaterske potrebe, potrebna vam je ekipa kojoj možete verovati. U Pipowork-u smo posvećeni pružanju najkvalitetnijih vodoinstalaterskih rešenja i izvanredne korisničke usluge u oblasti vodoinstalacija.",
+      subtitle: "Verujte našoj tradiciji",
       subtitleDescription:
-        "When it comes to your plumbing needs, you need a team you can trust. At Pipowork, we're committed to providing our clients with the highest quality plumbing solutions and exceptional customer service.",
-      image: "/images/about2-image.png",
+        "Kroz godine, naša kompanija je gradila ime na temelju stručnosti, posvećenosti i poverenja klijenata. Danas, sa bogatim iskustvom u vodoinstalaterskim uslugama, ponosno pružamo vrhunska rešenja i usluge, ostajući posvećeni kvalitetu i zadovoljstvu naših klijenata.",
+      image: "/images/about1-image.png",
     },
   ];
 

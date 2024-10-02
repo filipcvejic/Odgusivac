@@ -7,21 +7,21 @@ export default function Offers() {
   const offers = [
     {
       image: "/images/like-image.png",
-      title: "drive this instant",
-      description: "on orders over $35",
-      tag: "Free",
+      title: " i Stručnost",
+      description: "Radimo sa pažnjom i posvećenošću.",
+      tag: "Kvalitet",
     },
     {
       image: "/images/like-image.png",
-      title: "drive this instant",
-      description: "on orders over $35",
-      tag: "Free",
+      title: " i Posvećenost",
+      description: "Iskusni Majstori Za Vaš Dom",
+      tag: "Iskustvo",
     },
     {
       image: "/images/like-image.png",
-      title: "drive this instant",
-      description: "on orders over $35",
-      tag: "Free",
+      title: " Zadovoljstvo",
+      description: "Zajedno do savršenog rešenja za vas.",
+      tag: "Vaše",
     },
   ];
 
