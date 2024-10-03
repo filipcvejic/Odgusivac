@@ -1,3 +1,5 @@
+"use client";
+
 import { montserrat } from "@/app/font";
 import styles from "./Offers.module.css";
 import Image from "next/image";
@@ -20,16 +22,16 @@ export default function Offers() {
     {
       image: "/images/smiley.png",
       title: " Zadovoljstvo",
-      description: "Zajedno do savršenog rešenja za vas.",
+      description: "Zajedno do savršenog rešenja.",
       tag: "Vaše",
     },
   ];
 
   return (
-    <div className={`${styles.offersWrapper} ${montserrat.className} `}>
+    <div className={`${styles.offersWrapper} ${montserrat.className}`}>
       <div className={`${styles.offersContainer} container`}>
         {offers.map((offer, index) => (
-          <div key={index} className={styles.offerContent}>
+          <div className={styles.offerContent} key={index}>
             <div>
               <Image src={offer.image} height={90} width={90} alt="Like icon" />
             </div>

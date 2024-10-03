@@ -1,17 +1,17 @@
 .offersWrapper {
   margin-block: 50px;
   border-block: 2px solid #9b9b9b;
-  height: 200px;
   width: 100%;
   display: flex;
   align-items: center;
 }
 
 .offersContainer {
+  margin-block: 20px;
   width: 100%;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .offerContent {
@@ -50,4 +50,40 @@
 
 .offerButton:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .offersContainer {
+    grid-template-columns: repeat(2, 1fr); /* Dva u jednom redu */
+    grid-template-rows: auto auto; /* Dva reda */
+    gap: 20px;
+  }
+
+  .offerContent:last-child {
+    grid-column: 1 / 3; /* Ovaj stil se primenjuje samo na 1024px i veće */
+    justify-self: center;
+    align-self: center;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offersContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    gap: 20px;
+  }
+
+  .offerContent {
+    grid-column: span 1;
+    width: 100%;
+    gap: 35px;
+  }
+
+  .offerContent:last-child {
+    grid-column: unset;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+  }
 }

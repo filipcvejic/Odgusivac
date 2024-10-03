@@ -1,6 +1,7 @@
 import { bebas_neue } from "@/app/font";
 import styles from "./Services.module.css";
 import Image from "next/image";
+import React from "react";
 
 export default function Services() {
   const services = [
@@ -47,7 +48,17 @@ export default function Services() {
                 <div className={styles.topHalf} />
                 <div className={styles.bottomHalf} />
               </div>
-              <p className={styles.serviceDescription}>{service.label}</p>
+              <p className={styles.serviceDescription}>
+                {service.label.includes(" ") ? (
+                  <>
+                    {service.label.split(" ")[0]}
+                    <br />
+                    {service.label.split(" ")[1]}
+                  </>
+                ) : (
+                  service.label
+                )}
+              </p>
             </div>
           ))}
         </div>

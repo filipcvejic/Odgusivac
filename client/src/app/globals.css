@@ -50,20 +50,17 @@ a {
 
 #home,
 #services,
-#about {
-  scroll-margin-top: 115px;
-}
-
+#about,
 #experiences {
-  scroll-margin-top: 150px;
+  scroll-margin-top: 14vh;
 }
 
 #home {
-  padding-top: 115px;
+  padding-top: 14vh;
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1420px;
   margin: 0 auto;
   padding-inline: 20px;
 }
