@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from "./Header.module.css";
 import { bebas_neue, montserrat } from "@/app/font";
-import BurgerMenu from "@/components/BurgerMenu";
 import React from "react";
+import HamburgerMenu from "../HamburgerMenu";
 
 export default function Header() {
   const navigationLinks = [
@@ -88,61 +88,60 @@ export default function Header() {
   ];
 
   return (
-    <>
-      <BurgerMenu></BurgerMenu>
-      <header className={styles.header}>
-        <div className={styles.topHeaderWrapper}>
-          <div className={`${styles.topHeaderContent} container`}>
-            <div className={styles.contactInfo}>
-              <span>kontakt@vodoinstalateri-novisad.rs | Laze Kostica 13</span>
-            </div>
-            <a
-              href="tel:+381628188090"
-              className={`${styles.contactPhone} ${montserrat.className}`}
+    <header className={styles.header}>
+      <div className={styles.topHeaderWrapper}>
+        <div className={`${styles.topHeaderContent} container`}>
+          <div className={styles.contactInfo}>
+            <span>kontakt@vodoinstalateri-novisad.rs | Laze Kostica 13</span>
+          </div>
+          <a
+            href="tel:+381628188090"
+            className={`${styles.contactPhone} ${montserrat.className}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="size-6"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="size-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span>+381 62 818 8090</span>
-            </a>
-          </div>
-        </div>
-        <div className={styles.mainHeaderWrapper}>
-          <div className={`${styles.mainHeaderContent} container`}>
-            <div className={`${styles.logo} ${bebas_neue.className}`}>
-              <Image
-                src="/images/logo.png"
-                alt="Company Logo"
-                width={46}
-                height={46}
+              <path
+                fillRule="evenodd"
+                d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                clipRule="evenodd"
               />
-              <a href="#home">odgušivač</a>
-            </div>
-
-            <nav className={styles.navBar}>
-              <ul>
-                {navigationLinks.map((link, index) => (
-                  <li key={index}>
-                    <a href={`#${link.href}`} className={montserrat.className}>
-                      {link.icon}
-                      <span>{link.label}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            </svg>
+            <span>+381 62 818 8090</span>
+          </a>
+        </div>
+      </div>
+      <div className={styles.mainHeaderWrapper}>
+        <div className={`${styles.mainHeaderContent} container`}>
+          <div className={`${styles.logo} ${bebas_neue.className}`}>
+            <Image
+              src="/images/logo.png"
+              alt="Company Logo"
+              width={46}
+              height={46}
+            />
+            <a href="#home">odgušivač</a>
+          </div>
+          <nav className={styles.navBar}>
+            <ul>
+              {navigationLinks.map((link, index) => (
+                <li key={index}>
+                  <a href={`#${link.href}`} className={montserrat.className}>
+                    {link.icon}
+                    <span>{link.label}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className={styles.hamburgerMenu}>
+            <HamburgerMenu navLinks={navigationLinks} />
           </div>
         </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 }

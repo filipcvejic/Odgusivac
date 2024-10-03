@@ -1,0 +1,88 @@
+.menuContainer {
+  max-width: 360px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.menuWrapper {
+  background-color: #d2d2d2;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 400px;
+  width: 100%;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 20px;
+}
+
+.menuHeading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 44px;
+  padding-bottom: 10px;
+}
+
+.menuLogo {
+  background-color: #00adb5;
+  color: #eeeeee;
+  padding-inline: 16px;
+}
+
+.menuMail {
+  width: 100%;
+  font-size: 24px;
+  border-top: 2px solid #a7a7a7;
+  padding-block: 5px;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #a7a7a7;
+  padding-block: 10px;
+}
+
+.menuLabel {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  gap: 10px;
+}
+
+.menuLabel svg {
+  height: 35px;
+  width: 35px;
+}
+
+.menuPhoneNumberWrapper {
+  background-color: #bdbdbd;
+  width: 100%;
+}
+
+.menuPhoneNumber {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 10px;
+  font-size: 22px;
+}
+
+.menuPhoneNumber a {
+  color: #00adb5;
+}
+
+.menuPhoneNumber a:link {
+  color: #00adb5;
+}
