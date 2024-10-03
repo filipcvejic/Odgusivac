@@ -9,7 +9,7 @@ export default function AboutUs() {
       title: "Hitne intervencije 24/7 za odgušivanje",
       titleDescription:
         "Kada su vam odvodi zapušeni i voda ne otiče, naš tim je dostupan 24/7 za hitne intervencije u odgušivanju cevi. Sa modernom opremom i dugogodišnjim iskustvom, brzo rešavamo svaki problem sa začepljenim cevima, bez obzira na ozbiljnost situacije. Oslonite se na nas za brzu i pouzdanu uslugu odgušivanja cevi koja rešava hitne slučajeve.",
-      subtitle: "odgušivanje cevi u Novom Sadu",
+      subtitle: "Odgušivanje cevi u Novom Sadu",
       subtitleDescription:
         "Zapušene cevi mogu uzrokovati ozbiljne probleme u domaćinstvu, od neprijatnih mirisa do značajnih oštećenja instalacija. Naša ekipa pruža stručno odgušivanje cevi, koristeći najsavremenije alate koji garantuju temeljno čišćenje bez oštećenja cevi. Poverite nam svoje probleme.",
       image: "/images/about2-image.png",

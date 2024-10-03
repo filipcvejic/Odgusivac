@@ -2,7 +2,12 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: 90vh;
+  height: 86vh;
+}
+
+.aboutUsSectionContent {
+  display: flex;
+  height: 100%;
 }
 
 .leftToRightAboutContainer,
@@ -26,18 +31,9 @@
   margin-right: 40px;
 }
 
-.aboutUsSectionContent {
-  display: flex;
-  height: 100%;
-}
-
 .imageSide {
   flex: 11;
   position: relative;
-}
-
-.textSide {
-  flex: 9;
 }
 
 .leftToRightAboutContainer .imageSide img {
@@ -48,6 +44,8 @@
 }
 
 .textSide {
+  flex: 9;
+  padding-block: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,4 +76,49 @@
 .textSideTitleDescription,
 .textSideSubtitleDescription {
   line-height: 1.5;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutUsWrapper {
+    gap: 20;
+    height: 100%;
+  }
+
+  .aboutUsSectionContent {
+    height: 100%;
+    padding: 0;
+  }
+
+  .leftToRightAboutContainer,
+  .rightToLeftAboutContainer {
+    background: none;
+  }
+
+  .imageSide {
+    display: none;
+  }
+
+  .leftToRightAboutContainer .textSide,
+  .rightToLeftAboutContainer .textSide {
+    text-align: center;
+    margin: 0;
+  }
+
+  .textSide {
+    gap: 0;
+    padding: 0;
+  }
+
+  .textSide div {
+    padding: 20px;
+    flex: 1;
+  }
+
+  .textSide div:first-child {
+    background-color: #222831;
+  }
+
+  .textSide div:last-child {
+    background-color: #393e46;
+  }
 }
