@@ -3,8 +3,9 @@
 import React, { useState } from "react";
 import styles from "./HamburgerMenu.module.css";
 import { bebas_neue } from "@/app/font";
+import { HamburgerMenuProps } from "./HamburgerMenuProps";
 
-export default function HamburgerMenu({ navLinks }) {
+export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
   const [isOpened, setIsOpened] = useState(true);
 
   return (
@@ -20,15 +21,15 @@ export default function HamburgerMenu({ navLinks }) {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               className="size-6"
               width={50}
               height={50}
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M6 18 18 6M6 6l12 12"
               />
             </svg>
@@ -62,17 +63,13 @@ export default function HamburgerMenu({ navLinks }) {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="#00ADB5"
                   className="size-6"
                   height={35}
                   width={35}
                 >
-                  <path
-                    strokeLinecap="round"
-                    stroke-linejoin="round"
-                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  />
+                  <path strokeLinecap="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
               </li>
             ))}
