@@ -13,6 +13,8 @@ export default function Hero() {
       setScreenWidth(window.innerWidth);
     };
 
+    handleResize();
+
     window.addEventListener("resize", handleResize);
 
     return () => {
