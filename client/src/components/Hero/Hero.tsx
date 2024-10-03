@@ -6,7 +6,7 @@ import { bebas_neue, montserrat } from "@/app/font";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const [screenWidth, setScreenWidth] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {
