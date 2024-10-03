@@ -5,6 +5,7 @@
   background-color: #00adb5;
   padding: 4px;
   gap: 2rem;
+  padding-inline: 20px;
 }
 
 .topFooterWrapperText {
@@ -18,10 +19,9 @@
   font-size: 24px;
   font-weight: 400;
   padding: 8px 0 8px 8px;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
   outline: none;
   border: gray;
+  width: 100%;
 }
 
 .topFooterWrapperButton {

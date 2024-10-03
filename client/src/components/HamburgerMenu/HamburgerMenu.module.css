@@ -16,6 +16,7 @@
   top: 0;
   right: 0;
   padding-top: 20px;
+  padding: 15px;
 }
 
 .menuHeading {
@@ -43,14 +44,18 @@
 .menuList {
   display: flex;
   flex-direction: column;
+  list-style: none;
 }
 
 .menuItem {
+  border-bottom: 2px solid #a7a7a7;
+  padding-block: 10px;
+}
+
+.menuItem a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #a7a7a7;
-  padding-block: 10px;
 }
 
 .menuLabel {

@@ -120,8 +120,8 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt="Company Logo"
-              width={46}
-              height={46}
+              width={40}
+              height={40}
             />
             <a href="#home">odgušivač</a>
           </div>

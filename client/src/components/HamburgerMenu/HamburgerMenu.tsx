@@ -6,7 +6,7 @@ import { bebas_neue } from "@/app/font";
 import { HamburgerMenuProps } from "./HamburgerMenuProps";
 
 export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
-  const [isOpened, setIsOpened] = useState(true);
+  const [isOpened, setIsOpened] = useState(false);
 
   return (
     <>
@@ -49,28 +49,24 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
           <ul className={`${styles.menuList} ${styles.menuContainer}`}>
             {navLinks.map((navLink, index) => (
               <li className={styles.menuItem} key={index}>
-                <div className={styles.menuLabel}>
-                  {navLink.icon}
-                  <a
-                    href={`#${navLink.href}`}
-                    onClick={() => setIsOpened(false)}
+                <a href={`#${navLink.href}`} onClick={() => setIsOpened(false)}>
+                  <div className={styles.menuLabel}>
+                    {navLink.icon}
+                    <p>{navLink.label}</p>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="#00ADB5"
+                    className="size-6"
+                    height={35}
+                    width={35}
                   >
-                    {navLink.label}
-                  </a>
-                </div>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="#00ADB5"
-                  className="size-6"
-                  height={35}
-                  width={35}
-                >
-                  <path strokeLinecap="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                </svg>
+                    <path strokeLinecap="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </a>
               </li>
             ))}
           </ul>
