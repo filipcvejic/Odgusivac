@@ -6,13 +6,13 @@ import React from "react";
 export default function Offers() {
   const offers = [
     {
-      image: "/images/like-image.png",
+      image: "/images/pipe.png",
       title: " i Stručnost",
       description: "Radimo sa pažnjom i posvećenošću.",
       tag: "Kvalitet",
     },
     {
-      image: "/images/pipe.png",
+      image: "/images/like-image.png",
       title: " i Posvećenost",
       description: "Iskusni Majstori Za Vaš Dom",
       tag: "Iskustvo",
