@@ -43,3 +43,9 @@
   font-size: 26px;
   font-weight: 500;
 }
+
+@media screen and (max-width: 500px) {
+  .experiencesWrapper {
+    height: 92vh;
+  }
+}

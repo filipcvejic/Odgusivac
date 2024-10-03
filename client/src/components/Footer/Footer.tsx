@@ -28,13 +28,11 @@ const Footer = () => {
         <div className={`${styles.footerTopSide} container`}>
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Pozovite majstora</div>
-            <div>+381 62 818 8090</div>
+            <a href="tel:+381628188090">+381 62 818 8090</a>
             <div className={styles.footerTopSideSingleText}>
-              {/* <div className={styles.footerTopSideSingle}>Email</div> */}
-              <div>kontakt@vodoinstalateri-novisad.rs</div>
+              <p>kontakt@vodoinstalateri-novisad.rs</p>
             </div>
           </div>
-
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Usluge</div>
             <div>Popravka curenja</div>

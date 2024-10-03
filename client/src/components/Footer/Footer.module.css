@@ -113,3 +113,25 @@
   color: #cecece;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 780px) {
+  .topFooterWrapper {
+    flex-direction: column;
+    gap: 2px;
+    padding-bottom: 12px;
+  }
+  .topFooterWrapperInput {
+    font-size: 20px;
+  }
+
+  .footerTopSide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+  }
+
+  .footerTopSideSingle {
+    font-size: 40px;
+  }
+}

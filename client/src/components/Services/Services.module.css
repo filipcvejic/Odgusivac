@@ -73,6 +73,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 20px;
 }
 
 .service {
@@ -97,7 +98,7 @@
 
 @media screen and (max-width: 1024px) {
   .servicesWrapper {
-    height: 86vh;
+    height: 74vh;
   }
 
   .service:nth-child(1) {
@@ -126,10 +127,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+  .servicesWrapper {
+    height: 84vh;
+  }
 
   .servicesHeading {
-    margin-top: 15px;
-    margin-bottom: 0;
+    margin-top: 24px;
+    margin-bottom: 26px;
     font-size: 40px;
   }
 
@@ -165,5 +169,11 @@
   .imageWrapper img {
     height: 100px;
     width: 100px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .servicesWrapper {
+    height: 90vh;
   }
 }

@@ -1,5 +1,6 @@
 .offersWrapper {
   margin-block: 50px;
+  margin-bottom: 12px;
   border-block: 2px solid #9b9b9b;
   width: 100%;
   display: flex;
