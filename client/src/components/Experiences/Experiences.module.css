@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-block: 25px;
+  padding-block: 15px;
   height: 100%;
 }
 
@@ -46,6 +46,6 @@
 
 @media screen and (max-width: 500px) {
   .experiencesWrapper {
-    height: 92vh;
+    height: 86vh;
   }
 }
