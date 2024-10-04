@@ -11,18 +11,21 @@ export default function Offers() {
       image: "/images/pipe.png",
       title: " i Stručnost",
       description: "Radimo sa pažnjom i posvećenošću.",
+      additionalDescription: "Zapušeni odvodi",
       tag: "Kvalitet",
     },
     {
       image: "/images/like-image.png",
       title: " i Posvećenost",
       description: "Iskusni Majstori Za Vaš Dom",
+      additionalDescription: "Brzo čišćenje",
       tag: "Iskustvo",
     },
     {
       image: "/images/smiley.png",
       title: " Zadovoljstvo",
       description: "Zajedno do savršenog rešenja.",
+      additionalDescription: "Ručno otpušivanje",
       tag: "Vaše",
     },
   ];
@@ -42,7 +45,7 @@ export default function Offers() {
                 </p>
                 <p>{offer.description}</p>
               </div>
-              <a className={styles.offerButton}>Saznaj više</a>
+              <p className={styles.offerButton}>Saznaj više</p>
             </div>
           </div>
         ))}
