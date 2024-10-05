@@ -4,8 +4,8 @@ import styles from "./PhoneFlag.module.css";
 export default function PhoneFlag() {
   return (
     <div className={`${styles.flagContainer} ${bebas_neue.className}`}>
-      <a href="tel:+381653901520" className={styles.phoneNumber}>
-        065/390-1520
+      <a href="tel:+381628253911" className={styles.phoneNumber}>
+        062/825-3911
       </a>
     </div>
   );

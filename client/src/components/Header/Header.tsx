@@ -94,7 +94,7 @@ export default function Header() {
           <div className={styles.contactInfo}>
             <span>kontakt@vodoinstalateri-novisad.rs | Laze Kostica 13</span>
           </div>
-          <a href="tel:+381628188090" className={styles.contactPhone}>
+          <a href="tel:+381628253911" className={styles.contactPhone}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

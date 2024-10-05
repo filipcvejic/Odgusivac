@@ -42,7 +42,7 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
               className={`${styles.menuPhoneNumber} ${styles.menuContainer}`}
             >
               <p>+38165/390-1520</p>
-              <a href="tel:+381653901520">Pozovite</a>
+              <a href="tel:+381628253911">Pozovite</a>
             </div>
           </div>
 

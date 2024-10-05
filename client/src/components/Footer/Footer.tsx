@@ -28,7 +28,7 @@ const Footer = () => {
         <div className={`${styles.footerTopSide} container`}>
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Pozovite majstora</div>
-            <a href="tel:+381628188090">+381 62 818 8090</a>
+            <a href="tel:+381628253911">+381 62 818 8090</a>
             <div className={styles.footerTopSideSingleText}>
               <p>kontakt@vodoinstalateri-novisad.rs</p>
             </div>

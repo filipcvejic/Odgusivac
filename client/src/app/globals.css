@@ -26,8 +26,23 @@ a {
   }
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #d7d7d7;
+}
+::-webkit-scrollbar-thumb {
+  background: #8b8b8b;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #777777;
+}
+
 .content {
   position: relative;
+  color: black;
 }
 
 #home,
