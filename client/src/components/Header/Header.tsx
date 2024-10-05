@@ -120,7 +120,7 @@ export default function Header() {
               width={40}
               height={40}
             />
-            <a href="#home">Vodoinstalater</a>
+            <a href="#home">Majstor Mića</a>
           </div>
           <nav className={styles.navBar}>
             <ul>

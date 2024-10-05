@@ -82,10 +82,6 @@
   .heroWrapper {
     height: 86vh;
   }
-
-  .heroImage {
-    object-position: left;
-  }
 }
 
 @media screen and (max-width: 580px) {
