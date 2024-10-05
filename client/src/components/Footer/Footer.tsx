@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { bebas_neue } from "@/app/font";
+import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/contants";
 
 const Footer = () => {
   return (
@@ -28,9 +29,9 @@ const Footer = () => {
         <div className={`${styles.footerTopSide} container`}>
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Pozovite majstora</div>
-            <a href="tel:+381628253911">+381 62 818 8090</a>
+            <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
             <div className={styles.footerTopSideSingleText}>
-              <p>kontakt@vodoinstalateri-novisad.rs</p>
+              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </div>
           </div>
           <div className={styles.footerTopSideSingleText}>
@@ -42,10 +43,7 @@ const Footer = () => {
           </div>
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Adrese</div>
-            <div>Sanitehnik Novi Sad</div>
-            <div>Plumber Novi Sad</div>
-            <div>Vodoinstalateri Beograd</div>
-            <div>Pravna Lica - Beograd</div>
+            <p>{ADDRESS}</p>
           </div>
         </div>
 

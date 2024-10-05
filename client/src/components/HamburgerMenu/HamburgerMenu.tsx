@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import styles from "./HamburgerMenu.module.css";
 import { bebas_neue } from "@/app/font";
 import { HamburgerMenuProps } from "./HamburgerMenuProps";
+import { EMAIL, PHONE_NUMBER } from "@/contants";
 
 export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
   const [isOpened, setIsOpened] = useState(false);
@@ -35,14 +36,14 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
             </svg>
           </div>
           <p className={`${styles.menuMail} ${styles.menuContainer}`}>
-            uros.n.nikolic123@gmail.com
+            {EMAIL}
           </p>
           <div className={styles.menuPhoneNumberWrapper}>
             <div
               className={`${styles.menuPhoneNumber} ${styles.menuContainer}`}
             >
               <p>+38165/390-1520</p>
-              <a href="tel:+381628253911">Pozovite</a>
+              <a href={`tel:${PHONE_NUMBER}`}>Pozovite</a>
             </div>
           </div>
 

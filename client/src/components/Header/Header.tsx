@@ -3,6 +3,7 @@ import styles from "./Header.module.css";
 import { bebas_neue } from "@/app/font";
 import React from "react";
 import HamburgerMenu from "../HamburgerMenu";
+import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/contants";
 
 export default function Header() {
   const navigationLinks = [
@@ -92,9 +93,11 @@ export default function Header() {
       <div className={styles.topHeaderWrapper}>
         <div className={`${styles.topHeaderContent} container`}>
           <div className={styles.contactInfo}>
-            <span>kontakt@vodoinstalateri-novisad.rs | Laze Kostica 13</span>
+            <span>
+              {EMAIL} | {ADDRESS}
+            </span>
           </div>
-          <a href="tel:+381628253911" className={styles.contactPhone}>
+          <a href={`tel:${PHONE_NUMBER}`} className={styles.contactPhone}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -107,7 +110,7 @@ export default function Header() {
                 clipRule="evenodd"
               />
             </svg>
-            <span>+381 62 818 8090</span>
+            <span>{PHONE_NUMBER}</span>
           </a>
         </div>
       </div>

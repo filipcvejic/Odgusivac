@@ -45,8 +45,13 @@
 }
 
 @media screen and (max-width: 500px) {
+  .experienceContent,
   .experiencesWrapper {
-    height: 86vh;
+    height: 100%;
+  }
+
+  .experienceCommas {
+    padding-bottom: 30px;
   }
 }
 
