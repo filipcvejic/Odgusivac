@@ -46,7 +46,7 @@ export default function Experiences() {
         <h3 className={styles.experiencesHeading}>ISKUSTVA KORISNIKA</h3>
         <div>
           <Swiper
-            modules={[Pagination, Scrollbar, A11y, Autoplay]}
+            modules={[Pagination, Scrollbar, A11y]}
             spaceBetween={50}
             autoplay={{ delay: 3000 }}
             pagination={{ clickable: true }}
