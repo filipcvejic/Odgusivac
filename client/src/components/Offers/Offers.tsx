@@ -1,6 +1,5 @@
 "use client";
 
-import { montserrat } from "@/app/font";
 import styles from "./Offers.module.css";
 import Image from "next/image";
 import React from "react";
@@ -31,7 +30,7 @@ export default function Offers() {
   ];
 
   return (
-    <div className={`${styles.offersWrapper} ${montserrat.className}`}>
+    <div className={styles.offersWrapper}>
       <div className={`${styles.offersContainer} container`}>
         {offers.map((offer, index) => (
           <div className={styles.offerContent} key={index}>

@@ -13,9 +13,9 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
       {isOpened ? (
         <div className={styles.menuWrapper}>
           <div className={`${styles.menuHeading} ${styles.menuContainer}`}>
-            <div className={`${styles.menuLogo} ${bebas_neue.className}`}>
-              Odgušivač
-            </div>
+            <p className={`${styles.menuLogo} ${bebas_neue.className}`}>
+              Vodoinstalater
+            </p>
             <svg
               onClick={() => setIsOpened(false)}
               xmlns="http://www.w3.org/2000/svg"
