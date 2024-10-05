@@ -49,7 +49,7 @@ export default function Hero() {
         </p>
         <div className={styles.heroCallButtonWrapper}>
           <button className={styles.heroCallButton}>
-            <a href="tel:+381628188090">
+            <a href="tel:+381628253911">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
