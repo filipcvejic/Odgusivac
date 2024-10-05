@@ -20,25 +20,29 @@
   color: white;
 }
 
-.heroContent .heroSubtitle {
+.heroSubtitle,
+.heroDescription {
+  text-transform: uppercase;
+}
+
+.heroSubtitle {
   font-size: 35px;
   font-weight: 600;
   color: #00adb5;
 }
 
-.heroContent .heroTitle {
+.heroTitle {
   font-size: 120px;
   margin: 0;
   line-height: 0.8;
 }
 
-.heroContent .heroDescription {
-  color: white;
+.heroDescription {
   font-size: 26px;
   font-weight: bold;
 }
 
-.heroContent .heroDescription span {
+.heroDescription span {
   font-size: 38px;
 }
 
@@ -53,7 +57,7 @@
   transform: scale(1.1);
 }
 
-.heroCallButtonWrapper .heroCallButton {
+.heroCallButton {
   background-color: #00adb5;
   position: relative;
   color: white;
@@ -63,7 +67,7 @@
   cursor: pointer;
 }
 
-.heroCallButtonWrapper .heroCallButton a {
+.heroCallButton a {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -89,35 +93,53 @@
     text-align: center;
   }
 
-  .heroContent .heroTitle {
+  .heroTitle {
     line-height: 1.2;
   }
 
-  .heroCallButtonWrapper .heroCallButton {
+  .heroCallButton {
     margin: 0;
     padding: 0;
     clip-path: none;
   }
 
-  .heroCallButtonWrapper .heroCallButton a {
+  .heroCallButton a {
     padding: 0 15px 0 15px;
   }
 
-  .heroCallButtonWrapper .heroCallButton a h2 {
-    font-size: 3.75rem;
+  .heroCallButton a h2 {
+    font-size: 60px;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .heroContent .heroTitle {
-    font-size: 100px;
+@media screen and (max-width: 680px) {
+  .heroTitle {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heroTitle {
+    font-size: 75px;
   }
 
-  .heroContent .heroDescription {
+  .heroDescription {
     font-size: 22px;
   }
 
-  .heroContent .heroDescription span {
+  .heroDescription span {
     font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .heroTitle {
+    font-size: 58px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .heroCallButton a h2 {
+    font-size: 45px;
   }
 }

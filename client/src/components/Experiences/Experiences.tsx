@@ -1,6 +1,6 @@
 "use client";
 
-import { bebas_neue, montserrat } from "@/app/font";
+import { bebas_neue } from "@/app/font";
 import styles from "./Experiences.module.css";
 import { Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -41,10 +41,7 @@ export default function Experiences() {
   ];
 
   return (
-    <div
-      className={`${styles.experiencesWrapper} ${montserrat.className}`}
-      id="experiences"
-    >
+    <div className={styles.experiencesWrapper} id="experiences">
       <div className={`${styles.experiencesContainer} container`}>
         <h3 className={styles.experiencesHeading}>ISKUSTVA KORISNIKA</h3>
         <div>

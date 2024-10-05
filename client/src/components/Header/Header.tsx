@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Header.module.css";
-import { bebas_neue, montserrat } from "@/app/font";
+import { bebas_neue } from "@/app/font";
 import React from "react";
 import HamburgerMenu from "../HamburgerMenu";
 
@@ -94,10 +94,7 @@ export default function Header() {
           <div className={styles.contactInfo}>
             <span>kontakt@vodoinstalateri-novisad.rs | Laze Kostica 13</span>
           </div>
-          <a
-            href="tel:+381628188090"
-            className={`${styles.contactPhone} ${montserrat.className}`}
-          >
+          <a href="tel:+381628188090" className={styles.contactPhone}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -123,13 +120,13 @@ export default function Header() {
               width={40}
               height={40}
             />
-            <a href="#home">odgušivač</a>
+            <a href="#home">Vodoinstalater</a>
           </div>
           <nav className={styles.navBar}>
             <ul>
               {navigationLinks.map((link, index) => (
                 <li key={index}>
-                  <a href={`#${link.href}`} className={montserrat.className}>
+                  <a href={`#${link.href}`}>
                     {link.icon}
                     <span>{link.label}</span>
                   </a>

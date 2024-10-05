@@ -31,7 +31,7 @@ export default function Services() {
     <div className={styles.servicesWrapper} id="services">
       <div className={`${styles.servicesContent} container`}>
         <h3 className={`${styles.servicesHeading} ${bebas_neue.className}`}>
-          ODGUŠIVANJE CEVI U NOVOM SADU
+          Vodoinstalaterske usluge u novom sadu
         </h3>
         <div className={styles.servicesContainer}>
           {services.map((service, index) => (

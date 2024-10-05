@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./AboutUs.module.css";
 import Image from "next/image";
-import { montserrat } from "@/app/font";
 
 export default function AboutUs() {
   const aboutUsSections = [
@@ -26,10 +25,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <div
-      className={`${styles.aboutUsWrapper} ${montserrat.className}`}
-      id="about"
-    >
+    <div className={styles.aboutUsWrapper} id="about">
       {aboutUsSections.map((aboutUsSection, index) => {
         const isEven = index % 2 == 0;
 

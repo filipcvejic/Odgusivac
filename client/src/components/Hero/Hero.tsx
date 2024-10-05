@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import { bebas_neue, montserrat } from "@/app/font";
+import { bebas_neue } from "@/app/font";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
@@ -31,7 +31,7 @@ export default function Hero() {
   const buttonDimensions = isMobileWidth ? 45 : 70;
 
   return (
-    <div className={`${styles.heroWrapper} ${montserrat.className}`}>
+    <div className={styles.heroWrapper}>
       <Image
         src={heroImage}
         alt="Hero image"
@@ -42,10 +42,10 @@ export default function Hero() {
       <div className={`${styles.heroContent} container`}>
         <p className={styles.heroSubtitle}>Novi Sad</p>
         <h1 className={`${styles.heroTitle} ${bebas_neue.className}`}>
-          ODGUŠIVAČ
+          Vodoinstalater
         </h1>
         <p className={styles.heroDescription}>
-          HITNE INTEVERNCIJE <span>24/7</span>
+          hitne intervencije <span>24/7</span>
         </p>
         <div className={styles.heroCallButtonWrapper}>
           <button className={styles.heroCallButton}>

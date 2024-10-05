@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import { bebas_neue, montserrat } from "@/app/font";
+import { bebas_neue } from "@/app/font";
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
         <div className={styles.topFooterWrapperContainer}>
           <input
             type="text"
-            className={`${styles.topFooterWrapperInput} ${montserrat.className}`}
+            className={styles.topFooterWrapperInput}
             placeholder="Enter your e-mail"
           />
           <button
