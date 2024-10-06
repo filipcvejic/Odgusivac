@@ -1,12 +1,11 @@
-import React, { useState } from "react";
 import styles from "./Footer.module.css";
 import { bebas_neue } from "@/app/font";
 import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/contants";
 
 const Footer = () => {
   return (
-    <div>
-      <div className={styles.topFooterWrapper}>
+    <footer>
+      <section className={styles.topFooterWrapper}>
         <div
           className={`${bebas_neue.className} ${styles.topFooterWrapperText}`}
         >
@@ -24,8 +23,8 @@ const Footer = () => {
             Pošalji
           </button>
         </div>
-      </div>
-      <div className={styles.footer}>
+      </section>
+      <section className={styles.footer}>
         <div className={`${styles.footerTopSide} container`}>
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Pozovite majstora</div>
@@ -35,11 +34,15 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.footerTopSideSingleText}>
-            <div className={styles.footerTopSideSingle}>Usluge</div>
-            <div>Popravka curenja</div>
-            <div>Zamena cevi</div>
-            <div>Ugradnja sanitarija</div>
-            <div>Otčepljenje odvoda</div>
+            <h3 className={styles.footerHeading}>Naše usluge</h3>
+            <ul className={styles.footerList}>
+              <li>Popravka curenja cevi</li>
+              <li>Otčepljenje WC šolje i odvoda</li>
+              <li>Odgušivanje kanalizacije</li>
+              <li>Zamena vodovodnih cevi</li>
+              <li>Popravka bojlera</li>
+              <li>Ugradnja sanitarija</li>
+            </ul>
           </div>
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Adrese</div>
@@ -53,24 +56,23 @@ const Footer = () => {
           </div>
           <div className={styles.footerLogoText}>OTKRIJTE ŠTA ZNAČI BOLJE</div>
           <div className={styles.footerStatementsText}>
-            Izjave navedene na ovoj veb stranici nisu procenjene od strane
-            regulatornih tela. Ovi proizvodi i usluge nisu namenjeni
-            dijagnostikovanju, lečenju, izlečenju ili prevenciji bilo kakvih
-            problema ili poteškoća. Informacije pružene ovom veb stranicom ili
-            ovom kompanijom nisu zamena za profesionalni savet. Uvek se
-            konsultujte sa kvalifikovanim stručnjacima u vezi sa bilo kakvim
-            pitanjima ili nedoumicama koje imate. | © [Ime vaše kompanije], Inc.
-            2013–2024
+            Naša kompanija pruža sveobuhvatne vodoinstalaterske usluge:
+            odgušivanje kanalizacije, otčepljenje WC šolje i lavaboa, popravka i
+            zamena vodovodnih cevi, popravka bojlera, ugradnja sanitarnih
+            uređaja, i još mnogo toga. Bilo da vam je potrebna hitna
+            intervencija ili redovno održavanje vodoinstalacija, naši iskusni
+            vodoinstalateri su tu da vam pomognu. Informacije na ovoj stranici
+            su edukativnog karaktera i ne predstavljaju zamenu za stručni savet.
           </div>
           <div className={styles.footerBottomPhrases}>
-            <a href="/privacy-policy">PRIVATNOST POLITIKA</a>
-            <a href="/terms">USLOVI</a>
-            <a href="/sales-policy">POLITIKA PRODAJE</a>
-            <a href="/accessibility">PRISTUPAČNOST</a>
+            <p>PRIVATNOST POLITIKA</p>
+            <p>USLOVI</p>
+            <p>POLITIKA PRODAJE</p>
+            <p>PRISTUPAČNOST</p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </footer>
   );
 };
 

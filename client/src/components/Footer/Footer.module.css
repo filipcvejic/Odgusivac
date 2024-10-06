@@ -98,6 +98,18 @@
   color: #eeeeee;
 }
 
+.footerHeading {
+  color: #00adb5;
+}
+
+.footerList {
+  list-style: none;
+}
+
+.footerList li {
+  line-height: 2;
+}
+
 .footerStatementsText {
   max-width: 64rem;
   padding-inline: 20px;
