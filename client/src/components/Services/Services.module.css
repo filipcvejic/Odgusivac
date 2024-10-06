@@ -80,11 +80,14 @@
   transition: transform 0.5s ease;
 }
 
+.serviceTitle {
+}
+
 .service:hover {
   transform: scale(1.1);
 }
 
-.serviceDescription {
+.serviceTitle {
   display: block;
   text-align: center;
   white-space: normal;
@@ -94,7 +97,7 @@
 
 @media screen and (max-width: 1024px) {
   .servicesWrapper {
-    height: 74vh;
+    height: 100%;
   }
 
   .service:nth-child(1) {
@@ -122,9 +125,6 @@
   .servicesContainer {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-  }
-  .servicesWrapper {
-    height: 100%;
   }
 
   .servicesHeading {
@@ -158,7 +158,7 @@
     width: 140px;
   }
 
-  .serviceDescription {
+  .serviceTitle {
     font-size: 18px;
   }
 

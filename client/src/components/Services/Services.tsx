@@ -8,47 +8,52 @@ export default function Services() {
     {
       icon: "/images/pipe-image.png",
       label: "Odgušivanje cevi",
+      alt: "Ikona odgušivanja cevi",
     },
     {
       icon: "/images/warning-image.png",
       label: "Hitne intervencije",
+      alt: "Ikona za hitne vodoinstalaterske intervencije",
     },
     {
       icon: "/images/wrench-image.png",
       label: "Popravke",
+      alt: "Ikona vodoinstalaterskih popravki",
     },
     {
       icon: "/images/sink-image.png",
       label: "Zamena sanitarije",
+      alt: "Ikona za zamenu sanitarije",
     },
     {
       icon: "/images/camera-image.png",
       label: "Termalno snimanje",
+      alt: "Ikona za termalno snimanje cevi",
     },
   ];
 
   return (
-    <div className={styles.servicesWrapper} id="services">
+    <section className={styles.servicesWrapper} id="services">
       <div className={`${styles.servicesContent} container`}>
-        <h3 className={`${styles.servicesHeading} ${bebas_neue.className}`}>
-          Vodoinstalaterske usluge u novom sadu
-        </h3>
+        <h2 className={`${styles.servicesHeading} ${bebas_neue.className}`}>
+          Vodoinstalaterske usluge u Novom Sadu
+        </h2>
         <div className={styles.servicesContainer}>
           {services.map((service, index) => (
-            <div className={styles.service} key={index}>
+            <article className={styles.service} key={index}>
               <div className={styles.serviceCircle}>
                 <div className={styles.imageWrapper}>
                   <Image
                     src={service.icon}
                     width={120}
                     height={120}
-                    alt="Pipe image"
+                    alt={service.alt}
                   />
                 </div>
                 <div className={styles.topHalf} />
                 <div className={styles.bottomHalf} />
               </div>
-              <p className={styles.serviceDescription}>
+              <h4 className={styles.serviceTitle}>
                 {service.label.includes(" ") ? (
                   <>
                     {service.label.split(" ")[0]}
@@ -58,11 +63,11 @@ export default function Services() {
                 ) : (
                   service.label
                 )}
-              </p>
-            </div>
+              </h4>
+            </article>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

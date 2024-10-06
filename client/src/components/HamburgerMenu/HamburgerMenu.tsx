@@ -9,6 +9,48 @@ import { EMAIL, PHONE_NUMBER } from "@/contants";
 export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
   const [isOpened, setIsOpened] = useState(false);
 
+  const closeIcon = (
+    <svg
+      onClick={() => setIsOpened(false)}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className="size-6"
+      width={50}
+      height={50}
+      aria-label="Close menu"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M6 18 18 6M6 6l12 12"
+      />
+    </svg>
+  );
+
+  const openIcon = (
+    <svg
+      onClick={() => setIsOpened((prevValue) => !prevValue)}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className="size-6"
+      height={45}
+      width={45}
+      aria-label="Open menu"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+      />
+    </svg>
+  );
+
   return (
     <>
       {isOpened ? (
@@ -17,23 +59,7 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
             <p className={`${styles.menuLogo} ${bebas_neue.className}`}>
               Vodoinstalater
             </p>
-            <svg
-              onClick={() => setIsOpened(false)}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="size-6"
-              width={50}
-              height={50}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18 18 6M6 6l12 12"
-              />
-            </svg>
+            {closeIcon}
           </div>
           <p className={`${styles.menuMail} ${styles.menuContainer}`}>
             {EMAIL}
@@ -42,7 +68,7 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
             <div
               className={`${styles.menuPhoneNumber} ${styles.menuContainer}`}
             >
-              <p>+38165/390-1520</p>
+              <p>{PHONE_NUMBER}</p>
               <a href={`tel:${PHONE_NUMBER}`}>Pozovite</a>
             </div>
           </div>
@@ -64,6 +90,7 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
                     className="size-6"
                     height={35}
                     width={35}
+                    aria-label="Navigate to section"
                   >
                     <path strokeLinecap="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
@@ -73,23 +100,7 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
           </ul>
         </div>
       ) : (
-        <svg
-          onClick={() => setIsOpened((prevValue) => !prevValue)}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          className="size-6"
-          height={45}
-          width={45}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
+        openIcon
       )}
     </>
   );

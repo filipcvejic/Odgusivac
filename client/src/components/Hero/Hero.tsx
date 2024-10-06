@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./Hero.module.css";
 import { bebas_neue } from "@/app/font";
 import { useEffect, useState } from "react";
+import { PHONE_NUMBER } from "@/contants";
 
 export default function Hero() {
   const [screenWidth, setScreenWidth] = useState(0);
@@ -34,13 +35,13 @@ export default function Hero() {
     <div className={styles.heroWrapper}>
       <Image
         src={heroImage}
-        alt="Hero image"
+        alt="Vodoinstalater u Novom Sadu - Hero Slika"
         fill
         className={styles.heroImage}
         quality={100}
       />
       <div className={`${styles.heroContent} container`}>
-        <p className={styles.heroSubtitle}>Novi Sad</p>
+        <h2 className={styles.heroSubtitle}>Novi Sad</h2>
         <h1 className={`${styles.heroTitle} ${bebas_neue.className}`}>
           Vodoinstalater
         </h1>
@@ -48,7 +49,10 @@ export default function Hero() {
           hitne intervencije <span>24/7</span>
         </p>
         <div className={styles.heroCallButtonWrapper}>
-          <button className={styles.heroCallButton}>
+          <button
+            className={styles.heroCallButton}
+            aria-label="Pozovite nas odmah"
+          >
             <a href="tel:+381628253911">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +61,7 @@ export default function Hero() {
                 className="size-6"
                 height={buttonDimensions}
                 width={buttonDimensions}
+                aria-label="Pozovite nas"
               >
                 <path
                   fillRule="evenodd"
@@ -64,7 +69,7 @@ export default function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <h2 className={bebas_neue.className}>0628188090</h2>
+              <span className={bebas_neue.className}>{PHONE_NUMBER}</span>
             </a>
           </button>
         </div>

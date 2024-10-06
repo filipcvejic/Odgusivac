@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Footer.module.css";
 import { bebas_neue } from "@/app/font";
 import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/contants";
@@ -37,9 +37,9 @@ const Footer = () => {
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Usluge</div>
             <div>Popravka curenja</div>
-            <div>zamena cevi</div>
-            <div>ugradnja sanitarija</div>
-            <div>otčepljenje odvoda</div>
+            <div>Zamena cevi</div>
+            <div>Ugradnja sanitarija</div>
+            <div>Otčepljenje odvoda</div>
           </div>
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Adrese</div>
@@ -63,10 +63,10 @@ const Footer = () => {
             2013–2024
           </div>
           <div className={styles.footerBottomPhrases}>
-            <div>PRIVATNOST POLITIKA</div>
-            <div>USLOVI</div>
-            <div>POLITIKA PRODAJE</div>
-            <div>PRISTUPAČNOST</div>
+            <a href="/privacy-policy">PRIVATNOST POLITIKA</a>
+            <a href="/terms">USLOVI</a>
+            <a href="/sales-policy">POLITIKA PRODAJE</a>
+            <a href="/accessibility">PRISTUPAČNOST</a>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ export default function AboutUs() {
       subtitle: "Odgušivanje cevi u Novom Sadu",
       subtitleDescription:
         "Zapušene cevi mogu uzrokovati ozbiljne probleme u domaćinstvu, od neprijatnih mirisa do značajnih oštećenja instalacija. Naša ekipa pruža stručno odgušivanje cevi, koristeći najsavremenije alate koji garantuju temeljno čišćenje bez oštećenja cevi. Poverite nam svoje probleme.",
-      image: "/images/about2-image.png",
+      image: "/images/about2-image.jpg",
     },
     {
       title: "Oslonite se na naše stručnjake",
@@ -20,17 +20,17 @@ export default function AboutUs() {
       subtitle: "Verujte našoj tradiciji",
       subtitleDescription:
         "Kroz godine, naša kompanija je gradila ime na temelju stručnosti, posvećenosti i poverenja klijenata. Danas, sa bogatim iskustvom u vodoinstalaterskim uslugama, ponosno pružamo vrhunska rešenja i usluge, ostajući posvećeni kvalitetu i zadovoljstvu naših klijenata.",
-      image: "/images/about1-image.png",
+      image: "/images/about1-image.jpg",
     },
   ];
 
   return (
-    <div className={styles.aboutUsWrapper} id="about">
+    <section className={styles.aboutUsWrapper} id="about">
       {aboutUsSections.map((aboutUsSection, index) => {
-        const isEven = index % 2 == 0;
+        const isEven = index % 2 === 0;
 
         return (
-          <div
+          <article
             className={
               isEven
                 ? styles.leftToRightAboutContainer
@@ -44,23 +44,23 @@ export default function AboutUs() {
                   <Image
                     src={aboutUsSection.image}
                     fill
-                    alt={`About Image ${index + 1}`}
+                    alt={`${aboutUsSection.title}`}
                     className={styles.aboutImage}
                   />
                 ) : (
                   <>
                     <div>
-                      <p className={styles.textSideTitle}>
+                      <h2 className={styles.textSideTitle}>
                         {aboutUsSection.title}
-                      </p>
+                      </h2>
                       <p className={styles.textSideTitleDescription}>
                         {aboutUsSection.titleDescription}
                       </p>
                     </div>
                     <div>
-                      <p className={styles.textSideSubtitle}>
+                      <h3 className={styles.textSideSubtitle}>
                         {aboutUsSection.subtitle}
-                      </p>
+                      </h3>
                       <p className={styles.textSideSubtitleDescription}>
                         {aboutUsSection.subtitleDescription}
                       </p>
@@ -72,17 +72,17 @@ export default function AboutUs() {
                 {isEven ? (
                   <>
                     <div>
-                      <p className={styles.textSideTitle}>
+                      <h2 className={styles.textSideTitle}>
                         {aboutUsSection.title}
-                      </p>
+                      </h2>
                       <p className={styles.textSideTitleDescription}>
                         {aboutUsSection.titleDescription}
                       </p>
                     </div>
                     <div>
-                      <p className={styles.textSideSubtitle}>
+                      <h3 className={styles.textSideSubtitle}>
                         {aboutUsSection.subtitle}
-                      </p>
+                      </h3>
                       <p className={styles.textSideSubtitleDescription}>
                         {aboutUsSection.subtitleDescription}
                       </p>
@@ -92,15 +92,15 @@ export default function AboutUs() {
                   <Image
                     src={aboutUsSection.image}
                     fill
-                    alt={`About Image ${index + 1}`}
+                    alt={`${aboutUsSection.title}`}
                     className={styles.aboutImage}
                   />
                 )}
               </div>
             </div>
-          </div>
+          </article>
         );
       })}
-    </div>
+    </section>
   );
 }

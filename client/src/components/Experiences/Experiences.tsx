@@ -11,8 +11,6 @@ import "swiper/css/scrollbar";
 import React from "react";
 
 export default function Experiences() {
-  //Text - max: 330 characters
-
   const experiences = [
     {
       text: "Imali smo zastoj u kuhinji koji je izazvao mnogo problema. Stručnjaci su brzo reagovali koristeći savremene tehnike. Njihova isplativost i brzina su neverovatne. Usluga je neprocenjiva! Preporučujem ih svima koji se suočavaju sa sličnim problemima.",
@@ -41,15 +39,16 @@ export default function Experiences() {
   ];
 
   return (
-    <div className={styles.experiencesWrapper} id="experiences">
+    <section className={styles.experiencesWrapper} id="experiences">
       <div className={`${styles.experiencesContainer} container`}>
-        <h3 className={styles.experiencesHeading}>ISKUSTVA KORISNIKA</h3>
+        <h2 className={styles.experiencesHeading}>ISKUSTVA KORISNIKA</h2>
         <div>
           <Swiper
             modules={[Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={50}
             autoplay={{ delay: 3000 }}
             pagination={{ clickable: true }}
+            aria-label="Slider sa iskustvima korisnika"
             breakpoints={{
               1024: {
                 slidesPerView: 3,
@@ -67,22 +66,24 @@ export default function Experiences() {
                 key={index}
                 style={{ padding: 15, paddingBottom: 40 }}
               >
-                <div className={styles.experienceContent}>
+                <article className={styles.experienceContent}>
                   <span
                     className={`${styles.experienceCommas} ${bebas_neue.className}`}
                   >
                     ,,
                   </span>
-                  <p className={styles.experienceDescription}>
+                  <blockquote className={styles.experienceDescription}>
                     {experience.text}
+                  </blockquote>
+                  <p className={styles.experienceName}>
+                    <cite>{experience.name}</cite>
                   </p>
-                  <p className={styles.experienceName}>{experience.name}</p>
-                </div>
+                </article>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
