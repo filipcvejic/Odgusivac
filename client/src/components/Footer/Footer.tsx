@@ -5,7 +5,7 @@ import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/contants";
 const Footer = () => {
   return (
     <footer>
-      <section className={styles.topFooterWrapper}>
+      <div className={styles.topFooterWrapper}>
         <div
           className={`${bebas_neue.className} ${styles.topFooterWrapperText}`}
         >
@@ -23,8 +23,8 @@ const Footer = () => {
             Pošalji
           </button>
         </div>
-      </section>
-      <section className={styles.footer}>
+      </div>
+      <div className={styles.footer}>
         <div className={`${styles.footerTopSide} container`}>
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Pozovite majstora</div>
@@ -56,13 +56,11 @@ const Footer = () => {
           </div>
           <p className={styles.footerLogoText}>OTKRIJTE ŠTA ZNAČI BOLJE</p>
           <p className={styles.footerStatementsText}>
-            Naša kompanija pruža sveobuhvatne vodoinstalaterske usluge:
-            odgušivanje kanalizacije, otčepljenje WC šolje i lavaboa, popravka i
-            zamena vodovodnih cevi, popravka bojlera, ugradnja sanitarnih
-            uređaja, i još mnogo toga. Bilo da vam je potrebna hitna
-            intervencija ili redovno održavanje vodoinstalacija, naši iskusni
-            vodoinstalateri su tu da vam pomognu. Informacije na ovoj stranici
-            su edukativnog karaktera i ne predstavljaju zamenu za stručni savet.
+            Naša kompanija se bavi različitim aspektima vodoinstalaterskih
+            usluga, sa ciljem da zadovoljimo potrebe naših klijenata. Iako
+            nudimo širok spektar rešenja, naš tim se posebno ponosi svojom
+            brzinom i efikasnošću. Kontaktirajte nas za više informacija o našim
+            uslugama.
           </p>
           <div className={styles.footerBottomPhrases}>
             <p>PRIVATNOST POLITIKA</p>
@@ -71,7 +69,7 @@ const Footer = () => {
             <p>PRISTUPAČNOST</p>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
   );
 };
