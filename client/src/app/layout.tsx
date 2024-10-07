@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Hitne vodoinstalaterske intervencije 24/7 u Novom Sadu! Otpusivanje i odgušivanje wc šolja, lavaboa, sudopera i slivnika. Popravka bojlera i zamena sanitarija.",
   alternates: {
-    canonical: "https://odgusivac.vercel.app/",
+    canonical: "https://vodoinstalater-mica.rs",
   },
 };
 

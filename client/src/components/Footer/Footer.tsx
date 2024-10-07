@@ -54,8 +54,8 @@ const Footer = () => {
           <div className={`${styles.footerLogo} ${bebas_neue.className}`}>
             VODOINSTALATER
           </div>
-          <div className={styles.footerLogoText}>OTKRIJTE ŠTA ZNAČI BOLJE</div>
-          <div className={styles.footerStatementsText}>
+          <p className={styles.footerLogoText}>OTKRIJTE ŠTA ZNAČI BOLJE</p>
+          <p className={styles.footerStatementsText}>
             Naša kompanija pruža sveobuhvatne vodoinstalaterske usluge:
             odgušivanje kanalizacije, otčepljenje WC šolje i lavaboa, popravka i
             zamena vodovodnih cevi, popravka bojlera, ugradnja sanitarnih
@@ -63,7 +63,7 @@ const Footer = () => {
             intervencija ili redovno održavanje vodoinstalacija, naši iskusni
             vodoinstalateri su tu da vam pomognu. Informacije na ovoj stranici
             su edukativnog karaktera i ne predstavljaju zamenu za stručni savet.
-          </div>
+          </p>
           <div className={styles.footerBottomPhrases}>
             <p>PRIVATNOST POLITIKA</p>
             <p>USLOVI</p>

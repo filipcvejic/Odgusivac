@@ -5,6 +5,10 @@ body {
   scroll-behavior: smooth;
 }
 
+img {
+  user-select: none;
+}
+
 body {
   background-color: #eeeeee;
 }
