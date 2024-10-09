@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { montserrat } from "./font";
 import { PHONE_NUMBER } from "@/contants";
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>{children}</body>
+      <GoogleAnalytics gaId="G-GHKCYEYPP3" />
     </html>
   );
 }

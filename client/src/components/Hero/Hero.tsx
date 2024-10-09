@@ -53,7 +53,7 @@ export default function Hero() {
             className={styles.heroCallButton}
             aria-label="Pozovite nas odmah"
           >
-            <a href="tel:+381628253911">
+            <a href={`tel:${PHONE_NUMBER}`}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
