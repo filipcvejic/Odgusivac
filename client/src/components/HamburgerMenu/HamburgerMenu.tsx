@@ -53,55 +53,48 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
 
   return (
     <>
-      {isOpened ? (
-        <div className={styles.menuWrapper}>
-          <div className={`${styles.menuHeading} ${styles.menuContainer}`}>
-            <p className={`${styles.menuLogo} ${bebas_neue.className}`}>
-              Vodoinstalater
-            </p>
-            {closeIcon}
-          </div>
-          <p className={`${styles.menuMail} ${styles.menuContainer}`}>
-            {EMAIL}
+      {openIcon}
+      <div className={`${styles.menuWrapper} ${isOpened ? styles.open : ""}`}>
+        <div className={`${styles.menuHeading} ${styles.menuContainer}`}>
+          <p className={`${styles.menuLogo} ${bebas_neue.className}`}>
+            Vodoinstalater
           </p>
-          <div className={styles.menuPhoneNumberWrapper}>
-            <div
-              className={`${styles.menuPhoneNumber} ${styles.menuContainer}`}
-            >
-              <p>{PHONE_NUMBER}</p>
-              <a href={`tel:${PHONE_NUMBER}`}>Pozovite</a>
-            </div>
-          </div>
-
-          <ul className={`${styles.menuList} ${styles.menuContainer}`}>
-            {navLinks.map((navLink, index) => (
-              <li className={styles.menuItem} key={index}>
-                <a href={`#${navLink.href}`} onClick={() => setIsOpened(false)}>
-                  <div className={styles.menuLabel}>
-                    {navLink.icon}
-                    <p>{navLink.label}</p>
-                  </div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="#00ADB5"
-                    className="size-6"
-                    height={35}
-                    width={35}
-                    aria-label="Navigate to section"
-                  >
-                    <path strokeLinecap="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                  </svg>
-                </a>
-              </li>
-            ))}
-          </ul>
+          {closeIcon}
         </div>
-      ) : (
-        openIcon
-      )}
+        <p className={`${styles.menuMail} ${styles.menuContainer}`}>{EMAIL}</p>
+        <div className={styles.menuPhoneNumberWrapper}>
+          <div className={`${styles.menuPhoneNumber} ${styles.menuContainer}`}>
+            <p>{PHONE_NUMBER}</p>
+            <a href={`tel:${PHONE_NUMBER}`}>Pozovite</a>
+          </div>
+        </div>
+
+        <ul className={`${styles.menuList} ${styles.menuContainer}`}>
+          {navLinks.map((navLink, index) => (
+            <li className={styles.menuItem} key={index}>
+              <a href={`#${navLink.href}`} onClick={() => setIsOpened(false)}>
+                <div className={styles.menuLabel}>
+                  {navLink.icon}
+                  <p>{navLink.label}</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="#00ADB5"
+                  className="size-6"
+                  height={35}
+                  width={35}
+                  aria-label="Navigate to section"
+                >
+                  <path strokeLinecap="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }
