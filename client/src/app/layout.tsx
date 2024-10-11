@@ -7,7 +7,7 @@ import { PHONE_NUMBER } from "@/contants";
 export const metadata: Metadata = {
   title: `Vodoinstalater Novi Sad - Intervencije 24/7 | ${PHONE_NUMBER}`,
   description:
-    "Hitne vodoinstalaterske intervencije 24/7 u Novom Sadu! Otpusivanje i odgušivanje wc šolja, lavaboa, sudopera i slivnika. Popravka bojlera i zamena sanitarija.",
+    "Vodoinstalater Novi Sad - Hitne intervencije 24/7! Majstor Mića nudi odgušenje WC šolje, sudopere, popravku bojlera i zamenu sanitarija po povoljnim cenama.",
   alternates: {
     canonical: "https://vodoinstalater-mica.rs",
   },
