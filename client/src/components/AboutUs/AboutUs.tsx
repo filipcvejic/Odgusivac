@@ -5,12 +5,12 @@ import Image from "next/image";
 export default function AboutUs() {
   const aboutUsSections = [
     {
-      title: "Hitne intervencije 24/7 za odgušivanje",
+      title: "Hitne intervencije 24/7 za odgušenje",
       titleDescription:
-        "Kada su vam odvodi zapušeni i voda ne otiče, naš tim je dostupan 24/7 za hitne intervencije u odgušivanju cevi. Sa modernom opremom i dugogodišnjim iskustvom, brzo rešavamo svaki problem sa začepljenim cevima, bez obzira na ozbiljnost situacije. Oslonite se na nas za brzu i pouzdanu uslugu odgušivanja cevi koja rešava hitne slučajeve.",
-      subtitle: "Odgušivanje cevi u Novom Sadu",
+        "Kada su vam odvodi zapušeni i voda ne otiče, naš tim je dostupan 24/7 za hitne intervencije u odgušenju cevi. Sa modernom opremom i dugogodišnjim iskustvom, brzo rešavamo svaki problem sa začepljenim cevima, bez obzira na ozbiljnost situacije. Oslonite se na nas za brzu i pouzdanu uslugu odgušivanja cevi koja rešava hitne slučajeve.",
+      subtitle: "Odgušenje cevi u Novom Sadu",
       subtitleDescription:
-        "Zapušene cevi mogu uzrokovati ozbiljne probleme u domaćinstvu, od neprijatnih mirisa do značajnih oštećenja instalacija. Naša ekipa pruža stručno odgušivanje cevi, koristeći najsavremenije alate koji garantuju temeljno čišćenje bez oštećenja cevi. Poverite nam svoje probleme.",
+        "Zapušene cevi mogu uzrokovati ozbiljne probleme u domaćinstvu, od neprijatnih mirisa do značajnih oštećenja instalacija. Naša ekipa pruža stručno odgušenje cevi, koristeći najsavremenije alate koji garantuju temeljno čišćenje bez oštećenja cevi. Poverite nam svoje probleme.",
       image: "/images/about2-image.jpg",
     },
     {
