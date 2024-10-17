@@ -1,3 +1,5 @@
+"use client";
+
 import { bebas_neue } from "@/app/font";
 import styles from "./PhoneFlag.module.css";
 import { PHONE_NUMBER } from "@/contants";

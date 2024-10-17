@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Footer.module.css";
 import { bebas_neue } from "@/app/font";
 import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/contants";
