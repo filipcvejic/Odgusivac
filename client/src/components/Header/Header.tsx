@@ -4,6 +4,7 @@ import { bebas_neue } from "@/app/font";
 import React from "react";
 import HamburgerMenu from "../HamburgerMenu";
 import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/contants";
+import gtag_report_conversion from "@/helpers/gtagReportConversion";
 
 export default function Header() {
   const navigationLinks = [
@@ -92,7 +93,10 @@ export default function Header() {
               {EMAIL} | {ADDRESS}
             </span>
           </div>
-          <a href={`tel:${PHONE_NUMBER}`} className={styles.contactPhone}>
+          <a
+            onClick={() => gtag_report_conversion(`tel:${PHONE_NUMBER}`)}
+            className={styles.contactPhone}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

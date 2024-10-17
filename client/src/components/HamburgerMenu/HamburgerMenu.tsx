@@ -5,6 +5,7 @@ import styles from "./HamburgerMenu.module.css";
 import { bebas_neue } from "@/app/font";
 import { HamburgerMenuProps } from "./HamburgerMenuProps";
 import { EMAIL, PHONE_NUMBER } from "@/contants";
+import gtag_report_conversion from "@/helpers/gtagReportConversion";
 
 export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
   const [isOpened, setIsOpened] = useState(false);
@@ -65,7 +66,9 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
         <div className={styles.menuPhoneNumberWrapper}>
           <div className={`${styles.menuPhoneNumber} ${styles.menuContainer}`}>
             <p>{PHONE_NUMBER}</p>
-            <a href={`tel:${PHONE_NUMBER}`}>Pozovite</a>
+            <a onClick={() => gtag_report_conversion(`tel:${PHONE_NUMBER}`)}>
+              Pozovite
+            </a>
           </div>
         </div>
 

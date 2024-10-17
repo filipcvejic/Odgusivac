@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css";
 import { bebas_neue } from "@/app/font";
 import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/contants";
+import gtag_report_conversion from "@/helpers/gtagReportConversion";
 
 const Footer = () => {
   return (
@@ -28,7 +29,9 @@ const Footer = () => {
         <div className={`${styles.footerTopSide} container`}>
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Pozovite majstora</div>
-            <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
+            <a onClick={() => gtag_report_conversion(`tel:${PHONE_NUMBER}`)}>
+              {PHONE_NUMBER}
+            </a>
             <div className={styles.footerTopSideSingleText}>
               <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </div>
