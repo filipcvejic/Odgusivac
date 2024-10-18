@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { montserrat } from "./font";
 import { PHONE_NUMBER } from "@/contants";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: `Vodoinstalater Novi Sad - Intervencije 24/7 | ${PHONE_NUMBER}`,
@@ -20,8 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script>
-          {`(function(w,d,s,l,i){
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){
               w[l]=w[l]||[];
               w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
               var f=d.getElementsByTagName(s)[0],
@@ -30,21 +34,9 @@ export default function RootLayout({
               j.async=true;
               j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
               f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-KK36G6DC');`}
-        </script>
-        {/* <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-GHKCYEYPP3`}
-        ></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-GHKCYEYPP3');
-            gtag('config', 'AW-16742086901');
-          `}
-        </script> */}
+            })(window,document,'script','dataLayer','GTM-KK36G6DC');`,
+          }}
+        />
       </head>
       <body className={montserrat.className}>
         <noscript>
@@ -55,8 +47,25 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+
         {children}
       </body>
     </html>
   );
+}
+
+{
+  /* <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-GHKCYEYPP3`}
+        ></S>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GHKCYEYPP3');
+            gtag('config', 'AW-16742086901');
+          `}
+        </script> */
 }
