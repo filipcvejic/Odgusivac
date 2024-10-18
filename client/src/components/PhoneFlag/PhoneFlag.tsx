@@ -9,7 +9,8 @@ export default function PhoneFlag() {
   return (
     <div className={`${styles.flagContainer} ${bebas_neue.className}`}>
       <a
-        onClick={() => gtag_report_conversion(`tel:${PHONE_NUMBER}`)}
+        href={`tel:${PHONE_NUMBER}`}
+        onClick={gtag_report_conversion}
         className={styles.phoneNumber}
       >
         {PHONE_NUMBER}

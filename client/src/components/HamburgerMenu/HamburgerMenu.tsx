@@ -66,7 +66,7 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
         <div className={styles.menuPhoneNumberWrapper}>
           <div className={`${styles.menuPhoneNumber} ${styles.menuContainer}`}>
             <p>{PHONE_NUMBER}</p>
-            <a onClick={() => gtag_report_conversion(`tel:${PHONE_NUMBER}`)}>
+            <a href={`tel:${PHONE_NUMBER}`} onClick={gtag_report_conversion}>
               Pozovite
             </a>
           </div>

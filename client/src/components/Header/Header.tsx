@@ -96,7 +96,8 @@ export default function Header() {
             </span>
           </div>
           <a
-            onClick={() => gtag_report_conversion(`tel:${PHONE_NUMBER}`)}
+            href={`tel:${PHONE_NUMBER}`}
+            onClick={gtag_report_conversion}
             className={styles.contactPhone}
           >
             <svg

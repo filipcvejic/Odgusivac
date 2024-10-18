@@ -31,7 +31,7 @@ const Footer = () => {
         <div className={`${styles.footerTopSide} container`}>
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Pozovite majstora</div>
-            <a onClick={() => gtag_report_conversion(`tel:${PHONE_NUMBER}`)}>
+            <a href={`tel:${PHONE_NUMBER}`} onClick={gtag_report_conversion}>
               {PHONE_NUMBER}
             </a>
             <div className={styles.footerTopSideSingleText}>

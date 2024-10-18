@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import { montserrat } from "./font";
 import { PHONE_NUMBER } from "@/contants";
@@ -37,6 +37,7 @@ export default function RootLayout({
       </head>
       <body className={montserrat.className}>{children}</body>
       <GoogleAnalytics gaId="G-GHKCYEYPP3" />
+      <GoogleTagManager gtmId="GTM-KK36G6DC" />
     </html>
   );
 }
