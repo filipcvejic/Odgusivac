@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { montserrat } from "./font";
 import { PHONE_NUMBER } from "@/contants";
-import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: `Vodoinstalater Novi Sad - Intervencije 24/7 | ${PHONE_NUMBER}`,
