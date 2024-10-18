@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./Hero.module.css";
 import { bebas_neue } from "@/app/font";
 import { useEffect, useState } from "react";
-import { PHONE_NUMBER } from "@/contants";
+import { PHONE_HREF_LOCATION, PHONE_NUMBER } from "@/contants";
 import gtag_report_conversion from "@/helpers/gtagReportConversion";
 
 export default function Hero() {
@@ -54,7 +54,10 @@ export default function Hero() {
             className={styles.heroCallButton}
             aria-label="Pozovite nas odmah"
           >
-            <a href={`tel:${PHONE_NUMBER}`} onClick={gtag_report_conversion}>
+            <a
+              href={PHONE_HREF_LOCATION}
+              onClick={() => gtag_report_conversion(PHONE_HREF_LOCATION)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

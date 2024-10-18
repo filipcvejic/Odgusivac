@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 import { bebas_neue } from "@/app/font";
 import React from "react";
 import HamburgerMenu from "../HamburgerMenu";
-import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/contants";
+import { ADDRESS, EMAIL, PHONE_HREF_LOCATION, PHONE_NUMBER } from "@/contants";
 import gtag_report_conversion from "@/helpers/gtagReportConversion";
 
 export default function Header() {
@@ -96,8 +96,8 @@ export default function Header() {
             </span>
           </div>
           <a
-            href={`tel:${PHONE_NUMBER}`}
-            onClick={gtag_report_conversion}
+            href={PHONE_HREF_LOCATION}
+            onClick={() => gtag_report_conversion(PHONE_HREF_LOCATION)}
             className={styles.contactPhone}
           >
             <svg

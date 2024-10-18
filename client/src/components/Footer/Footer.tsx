@@ -2,7 +2,7 @@
 
 import styles from "./Footer.module.css";
 import { bebas_neue } from "@/app/font";
-import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/contants";
+import { ADDRESS, EMAIL, PHONE_HREF_LOCATION, PHONE_NUMBER } from "@/contants";
 import gtag_report_conversion from "@/helpers/gtagReportConversion";
 
 const Footer = () => {
@@ -31,7 +31,10 @@ const Footer = () => {
         <div className={`${styles.footerTopSide} container`}>
           <div className={styles.footerTopSideSingleText}>
             <div className={styles.footerTopSideSingle}>Pozovite majstora</div>
-            <a href={`tel:${PHONE_NUMBER}`} onClick={gtag_report_conversion}>
+            <a
+              href={PHONE_HREF_LOCATION}
+              onClick={() => gtag_report_conversion(PHONE_HREF_LOCATION)}
+            >
               {PHONE_NUMBER}
             </a>
             <div className={styles.footerTopSideSingleText}>
