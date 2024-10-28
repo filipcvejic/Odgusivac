@@ -7,28 +7,28 @@ export default function Services() {
   const services = [
     {
       icon: "/images/pipe-image.png",
-      label: "Odgušivanje cevi",
-      alt: "Ikona odgušivanja cevi",
+      label: "Odgušenje cevi",
+      alt: "Odgušenje cevi",
     },
     {
       icon: "/images/warning-image.png",
       label: "Hitne intervencije",
-      alt: "Ikona za hitne vodoinstalaterske intervencije",
+      alt: "Hitne vodoinstalaterske intervencije",
     },
     {
       icon: "/images/wrench-image.png",
-      label: "Popravke",
-      alt: "Ikona vodoinstalaterskih popravki",
+      label: "Popravke vodovoda",
+      alt: "Vodoinstalaterske popravke",
     },
     {
       icon: "/images/sink-image.png",
       label: "Zamena sanitarije",
-      alt: "Ikona za zamenu sanitarije",
+      alt: "Zamenu sanitarije",
     },
     {
       icon: "/images/camera-image.png",
       label: "Termalno snimanje",
-      alt: "Ikona za termalno snimanje cevi",
+      alt: "Termalno snimanje cevi",
     },
   ];
 
