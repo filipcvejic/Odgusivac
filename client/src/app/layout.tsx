@@ -47,25 +47,8 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-
         {children}
       </body>
     </html>
   );
-}
-
-{
-  /* <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-GHKCYEYPP3`}
-        ></S>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-GHKCYEYPP3');
-            gtag('config', 'AW-16742086901');
-          `}
-        </script> */
 }
