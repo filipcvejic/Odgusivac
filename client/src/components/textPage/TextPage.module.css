@@ -32,3 +32,26 @@
   justify-content: space-between;
   grid-template-columns: 50% 50%;
 }
+
+.textPageButton {
+  background-color: #00adb5;
+  padding: 12px 42px;
+  border-style: none;
+  font-size: 36px;
+  margin-top: 2rem;
+  transition: background-color 0.2s;
+}
+
+.textPageButton:hover {
+  background-color: #00ccd6;
+}
+
+@media screen and (max-width: 1040px) {
+  .textPageArticle {
+    flex-direction: column;
+  }
+
+  .textPageWrapper {
+    text-align: center;
+  }
+}

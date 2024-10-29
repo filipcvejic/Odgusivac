@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./TextPage.module.css";
 import Image from "next/image";
+import { PHONE_NUMBER } from "@/contants";
 const textPage = ({
   text1,
   text2,
@@ -28,6 +29,7 @@ const textPage = ({
           <div>
             <h2>{title2}</h2>
             <p>{text2}</p>
+            <button className={styles.textPageButton}>{PHONE_NUMBER}</button>
           </div>
           <Image
             src={img1}
